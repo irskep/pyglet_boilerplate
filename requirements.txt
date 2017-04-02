@@ -1,0 +1,6 @@
+appdirs==1.4.3
+packaging==16.8
+-e hg+ssh://hg@bitbucket.org/pyglet/pyglet@ef5c342f24df645fa935911a6aa5ce7ccf018ded#egg=pyglet
+PyInstaller==3.2.1
+pyparsing==2.2.0
+six==1.10.0
