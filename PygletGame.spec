@@ -19,7 +19,7 @@ pyz = PYZ(a.pure, a.zipped_data,
 exe = EXE(pyz,
           a.scripts,
           exclude_binaries=True,
-          name='LDTest',
+          name='PygletGame',
           debug=False,
           strip=False,
           upx=True,
@@ -30,8 +30,8 @@ coll = COLLECT(exe,
                a.datas,
                strip=False,
                upx=True,
-               name='LDTest')
+               name='PygletGame')
 app = BUNDLE(coll,
-             name='LDTest.app',
+             name='PygletGame.app',
              icon=None,
-             bundle_identifier='com.steveasleep.pyglet_game')
+             bundle_identifier='com.steveasleep.PygletGame')

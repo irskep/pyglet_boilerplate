@@ -2,9 +2,9 @@
 
 dist:
 	pyinstaller run.py \
-		--name=LDTest \
+		--name=PygletGame \
 		--hidden-import=future \
-		--osx-bundle-identifier=com.steveasleep.pyglet_game \
+		--osx-bundle-identifier=com.steveasleep.PygletGame \
 		--windowed
 
 run:
