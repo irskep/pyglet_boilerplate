@@ -3,11 +3,11 @@
 block_cipher = None
 
 
-a = Analysis(['ldtest'],
+a = Analysis(['run.py'],
              pathex=['/Users/steve/dev/_scratch/ldtest'],
              binaries=[],
              datas=[],
-             hiddenimports=[],
+             hiddenimports=['future'],
              hookspath=[],
              runtime_hooks=[],
              excludes=[],
@@ -19,15 +19,19 @@ pyz = PYZ(a.pure, a.zipped_data,
 exe = EXE(pyz,
           a.scripts,
           exclude_binaries=True,
-          name='ldtest',
+          name='LDTest',
           debug=False,
           strip=False,
           upx=True,
-          console=True )
+          console=False )
 coll = COLLECT(exe,
                a.binaries,
                a.zipfiles,
                a.datas,
                strip=False,
                upx=True,
-               name='ldtest')
+               name='LDTest')
+app = BUNDLE(coll,
+             name='LDTest.app',
+             icon=None,
+             bundle_identifier='com.steveasleep.ldtest')
