@@ -4,7 +4,7 @@ dist:
 	pyinstaller run.py \
 		--name=LDTest \
 		--hidden-import=future \
-		--osx-bundle-identifier=com.steveasleep.ldtest \
+		--osx-bundle-identifier=com.steveasleep.pyglet_game \
 		--windowed
 
 run:

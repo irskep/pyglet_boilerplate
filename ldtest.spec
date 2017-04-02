@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['run.py'],
-             pathex=['/Users/steve/dev/_scratch/ldtest'],
+             pathex=['/Users/steve/dev/_scratch/pyglet_boilerplate'],
              binaries=[],
              datas=[],
              hiddenimports=['future'],
@@ -34,4 +34,4 @@ coll = COLLECT(exe,
 app = BUNDLE(coll,
              name='LDTest.app',
              icon=None,
-             bundle_identifier='com.steveasleep.ldtest')
+             bundle_identifier='com.steveasleep.pyglet_game')

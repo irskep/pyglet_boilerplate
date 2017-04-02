@@ -1,3 +1,3 @@
-from ldtest.main import main
+from game.main import main
 
 main()
