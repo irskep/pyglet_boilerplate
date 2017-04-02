@@ -2,9 +2,9 @@ import pyglet
 from pyglet.window import key
 
 
-class LDWindow(pyglet.window.Window):
+class GameWindow(pyglet.window.Window):
   def __init__(self):
-    super().__init__(visible=False, caption="LDTest")
+    super().__init__(visible=False, caption="PygletGame")
 
     self.label = pyglet.text.Label(
       '@',
@@ -36,6 +36,6 @@ class LDWindow(pyglet.window.Window):
 
 
 def main():
-  window = LDWindow()
+  window = GameWindow()
   window.set_visible()
   pyglet.app.run()
